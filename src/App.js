@@ -1,11 +1,12 @@
 import './App.css';
+import NotificationList from './components/NotificationList/NotificationList';
+import Footer from './components/Footer/Footer';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        
-      </header>
+        <NotificationList />
+        <Footer />
     </div>
   );
 }

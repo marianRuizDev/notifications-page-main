@@ -1,0 +1,7 @@
+.container {
+    margin: 0px 380px 100px 380px;
+    padding: 20px 20px 10px 20px;
+    background-color: hsl(0, 0%, 100%);
+    display: grid;
+    grid-auto-flow: row;
+}
