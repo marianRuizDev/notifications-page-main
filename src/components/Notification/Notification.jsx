@@ -1,10 +1,15 @@
 import './notification.css'
 
-function Notification ({name, date, picture, content, message}) {
+function Notification ({name, date, picture, content, message, contentMessage}) {
+    console.log(contentMessage)
     return (
         <div className="noti">
-            <img src={picture} alt="Profile Picture"/>
-            <p><strong>{name}</strong> {content}</p>
+            <img src={picture} className="img" alt="Profile Picture"/>
+            <div>
+                <div><strong>{name}</strong> {content}</div>
+                <footer>{date}</footer>
+                {message && (<p className='message'>{contentMessage}</p>)}
+            </div>
         </div>
     ) 
 }
