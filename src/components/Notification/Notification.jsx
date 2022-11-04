@@ -1,28 +1,33 @@
 import './notification.css'
 
-function Notification ({name, date, picture, content, message, contentMessage, object}) {
+function Notification ({picture, name, date, profilePicture, content, message, contentMessage, object}) {
     return (
-        <div className="noti">
-            <img src={picture} className="img" alt="Profile Picture"/>
+        <div className={picture ? "noti-picture" : "noti"}>
+            
+            <img src={profilePicture} className="img" alt="Profile Picture"/>
             <div>
-                <div>
+                <div className='noti-text'>
                     <button className='name'> 
                         <strong>{name}</strong>
                     </button> 
-                    <span className='content-noti'>
+                    <span>
                         {content}
                         <button className='object-noti'>
                             <strong >
                                 {object}
                             </strong>
                         </button>
+                        <span className='dot-noti'></span>
+                        
                     </span>
-                    </div>
+                    
+                </div>                
                 <footer className='date'>
                     {date}
                 </footer>
                 {message && (<p className='message'>{contentMessage}</p>)}
             </div>
+             {picture && (<img className='img picture' src={picture}/>)}
         </div>
     ) 
 }

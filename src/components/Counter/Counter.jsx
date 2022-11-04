@@ -3,7 +3,7 @@ import './counter.css'
 function Counter () {
     return (
         <div className='counter'>
-            <span className='content'>0</span>
+            <span className='content'><strong>3</strong></span>
         </div>
     ) 
 }

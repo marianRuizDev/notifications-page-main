@@ -1,21 +1,21 @@
 .noti {
     display: grid;
-    grid-template-columns: 10% 90%;
+    grid-template-columns: 1fr 15fr;
     padding: 20px;
     background-color: hsl(210, 60%, 98%);
     border-radius: 10px;
 }
 
-img{
+.img{
     width: 45px;
     height: 45px;
+    padding-right: 15px;
 }
 
 .message {
     border: 1px solid hsl(205, 33%, 90%);
     padding: 20px;
     border-radius: 4px;
-    color: hsl(219, 12%, 42%);
 }
 
 .message:hover {
@@ -30,29 +30,47 @@ img{
     padding-left: 0%;
     padding-right: 7px;
     color: hsl(224, 21%, 14%);
-    font-size: 1rem;
+    font-size: .95rem;
 }
 
 .name:hover {
     color: hsl(219, 85%, 26%);
 }
 
-.content-noti {
-    color: hsl(219, 12%, 42%);
-}
 
-.date {
-    color: hsl(219, 14%, 63%);
-}
 
 .object-noti {
     border: none;
     background-color: inherit;
     cursor: pointer;
-    display: inline-block;
-    color: hsl(219, 12%, 42%);
 }
 
 .object-noti:hover {
     color: hsl(219, 85%, 26%);
+}
+
+.dot-noti {
+    height: 8px;
+    width: 8px;
+    background-color: hsl(1, 90%, 64%);
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.noti-text, .date, .object-noti, .message {
+    font-size: .95rem;
+    color: hsl(219, 12%, 42%);
+}
+
+.noti-picture {
+    display: grid;
+    grid-template-columns: .26fr 2fr .74fr;
+    padding: 20px;
+    background-color: hsl(210, 60%, 98%);
+    border-radius: 10px;
+}
+
+.picture {
+    display: grid;
+    justify-self: right;
 }

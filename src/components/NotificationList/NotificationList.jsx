@@ -17,12 +17,13 @@ function NotificationList () {
                     <Notification
                         key={i}
                         name={e.name} 
-                        picture={e.picture} 
+                        profilePicture={e.profilePicture} 
                         content={e.content} 
                         date={e.date}
                         message={e.message}
                         contentMessage={e.contentMessage}
-                        object={e.object} 
+                        object={e.object}
+                        picture={e.picture}
                     />
                 )}
             </div>

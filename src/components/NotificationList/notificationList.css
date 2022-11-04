@@ -1,5 +1,5 @@
 .container {
-    margin: 0px 300px 100px 300px;
+    margin: 0px 320px 100px 320px;
     padding: 15px 30px 10px 30px;
     background-color: hsl(0, 0%, 100%);
     display: grid;
@@ -11,10 +11,13 @@
 .head {
     display: grid;
     grid-auto-flow: column;
-    grid-template-columns: 23% 37% 40%;
+    grid-template-columns: .5fr 2fr 1fr;
 }
 
 .title {
     color: hsl(224, 21%, 14%);
     font-size: 1.5rem;
+    padding-right: 15px;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    
 }
