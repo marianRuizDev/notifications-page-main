@@ -1,0 +1,13 @@
+.counter {
+    width: 35px;
+    height: 25px;
+    background-color: hsl(219, 85%, 26%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    border-radius: 6px;
+    color: white;
+}
+
+

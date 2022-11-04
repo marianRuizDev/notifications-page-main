@@ -1,7 +1,8 @@
 const notifications = [
     {
         name: "Mark Webber",
-        content: "reacted to your recent post My first tournament today!",
+        content: "reacted to your recent post  ",
+        object: "My first tournament today!",
         date: "1m ago",
         message: false,
         picture: "../../assets/images/avatar-mark-webber.webp"
@@ -15,7 +16,8 @@ const notifications = [
     },
     {
         name: "Jacob Thompson",
-        content: "has joined your group Chess Club",
+        content: "has joined your group ",
+        object: "Chess Club",
         date: "1 day ago",
         message: false,
         picture: "../../assets/images/avatar-jacob-thompson.webp"
@@ -37,14 +39,16 @@ const notifications = [
     },
     {
         name: "Nathan Peterson",
-        content: "reacted to your recent post 5 end-game strategies to increase your win rate",
+        content: "reacted to your recent post ",
+        object: "5 end-game strategies to increase your win rate",
         date: "2 weeks ago",
         message: false,
         picture: "../../assets/images/avatar-nathan-peterson.webp"
     },
     {
         name: "Anna Kim",
-        content: "left the group Chess Club",
+        content: "left the group ",
+        object: "Chess Club",
         date: "2 weeks ago",
     message: false,
     picture: "../../assets/images/avatar-anna-kim.webp"        
