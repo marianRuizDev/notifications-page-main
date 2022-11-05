@@ -10,4 +10,14 @@
     color: white;
 }
 
+@media screen and (min-width: 375px) and (max-width: 1200px) {
+    .counter {
+        width: 20px;
+        height: 15px;
+        border-radius: 3px;
+    }
+    .content {
+        font-size: .6rem;
+    }
+}
 

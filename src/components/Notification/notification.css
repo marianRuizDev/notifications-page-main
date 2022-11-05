@@ -37,8 +37,6 @@
     color: hsl(219, 85%, 26%);
 }
 
-
-
 .object-noti {
     border: none;
     background-color: inherit;
@@ -73,4 +71,25 @@
 .picture {
     display: grid;
     justify-self: right;
+}
+
+@media screen and (min-width: 375px) and (max-width: 1200px) {
+    .noti {
+        padding: 5px;
+        border-radius: 8px;
+    }
+    .img {
+        width: 20px;
+        height: 20px;
+        padding-right: 5px
+    }
+    .noti-text, .date, .object-noti, .message, .name {
+        font-size: .5rem;
+        color: hsl(219, 12%, 42%);
+    }
+    .message {
+        border: 1px solid hsl(205, 33%, 90%);
+        padding: 5px;
+        border-radius: 4px;
+    }
 }

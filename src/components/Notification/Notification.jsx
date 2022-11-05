@@ -12,13 +12,13 @@ function Notification ({picture, name, date, profilePicture, content, message, c
                     </button> 
                     <span>
                         {content}
-                        <button className='object-noti'>
+                        <a  className='object-noti'>
                             <strong >
                                 {object}
                             </strong>
-                        </button>
+                        </a>
                         <span className='dot-noti'></span>
-                        
+
                     </span>
                     
                 </div>                
@@ -33,3 +33,9 @@ function Notification ({picture, name, date, profilePicture, content, message, c
 }
 
 export default Notification;
+
+/* 
+@media screen and (max-width: 375) {
+           
+} 
+*/
